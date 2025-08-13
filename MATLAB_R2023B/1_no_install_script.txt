@@ -1,0 +1,1 @@
+You won't find any install.sh script file inside of the main ISO, because its actually located at the Update ISO, :)
