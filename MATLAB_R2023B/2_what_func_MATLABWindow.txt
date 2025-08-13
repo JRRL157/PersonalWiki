@@ -1,0 +1,6 @@
+If you are running at Ubuntu 24.04, please be aware that these commands down below worked perfectly:
+
+$ sudo apt install xfce4
+$ sudo apt remove xfce4 
+$ sudo apt-get update 
+$ sudo apt-get install libnss3
