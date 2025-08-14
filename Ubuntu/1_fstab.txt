@@ -12,8 +12,8 @@
 /dev/disk/by-uuid/162B-6E06 /boot/efi vfat defaults 0 1
 
 #Windows Partition
-UUID="682831DC2831AA48"    /home/jrrl/WINDOWS     ntfs discard,rw,nodev,noexec,auto,nouser,async,locale=en_US.utf8,uid=1000,gid=1000,umask=0002   0     0
+UUID="682831DC2831AA48"    /home/jrrl/WINDOWS     ntfs discard,rw,nodev,auto,nouser,async,locale=en_US.utf8,uid=1000,gid=1000,umask=0002   0     0
 
 #NTFS File Partition
-UUID="FEA4FBBAA4FB740D"    /home/jrrl/FILES     ntfs discard,rw,nodev,noexec,auto,nouser,async,locale=en_US.utf8,uid=1000,gid=1000,umask=0002   0     0
+UUID="FEA4FBBAA4FB740D"    /home/jrrl/FILES     ntfs discard,rw,nodev,auto,nouser,async,locale=en_US.utf8,uid=1000,gid=1000,umask=0002   0     0
 
