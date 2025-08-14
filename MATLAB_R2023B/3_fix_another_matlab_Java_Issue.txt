@@ -1,0 +1,1 @@
+sudo glnxa64/registerWithOS
