@@ -1,0 +1,1 @@
+You could try to clone the WiFi Settings in another connect, maybe the raspberry Pi will automatically connect to this clone
