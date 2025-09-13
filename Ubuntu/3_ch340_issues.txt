@@ -1,0 +1,31 @@
+[290017.103371] usb 1-2.1: new full-speed USB device number 81 using xhci_hcd
+
+[290017.193847] usb 1-2.1: New USB device found, idVendor=1a86, idProduct=7523, bcdDevice= 2.64
+
+[290017.193865] usb 1-2.1: New USB device strings: Mfr=0, Product=2, SerialNumber=0
+
+[290017.193873] usb 1-2.1: Product: USB Serial
+
+[290017.247055] ch341 1-2.1:1.0: ch341-uart converter detected
+
+[290017.261014] usb 1-2.1: ch341-uart converter now attached to ttyUSB0
+
+[290017.940978] input: BRLTTY 6.4 Linux Screen Driver Keyboard as /devices/virtual/input/input339
+
+[290017.946680] usb 1-2.1: usbfs: interface 0 claimed by ch341 while 'brltty' sets config #1
+
+[290017.950075] ch341-uart ttyUSB0: ch341-uart converter now disconnected from ttyUSB0
+
+[290017.950126] ch341 1-2.1:1.0: device disconnected
+
+As you can see, the BRLTTY was kicking off the just connected CH341 UART converter, so please just remove it by doing this:
+
+
+$ sudo apt-get purge brltty
+
+OR
+
+$ systemctl stop brltty-udev.service
+$ sudo systemctl mask brltty-udev.service
+$ systemctl stop brltty.service
+$ systemctl disable brltty.service
