@@ -1,0 +1,16 @@
+Scenario:
+
+#dhclient -r eth0 (Worked)
+#dhclient -1 eth0 (Not working at all)
+
+What I did?
+
+First, some leases were available on the following file
+
+/var/lib/dhcp/dhclient.leases
+
+I noticed that the ip was very different from the one that I was trying to push into the client network configuration.
+
+The solution was:
+
+echo "" > /var/lib/dhcp/dhclient.leases
