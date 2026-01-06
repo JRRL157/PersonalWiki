@@ -1,0 +1,9 @@
+Atualização no Ubuntu 24.04 (Outro laptop)
+
+Situação:
+
+Tive problemas na hora de gerar o HDL (Generate HDL) no Qsys/Platform Designer no Quartus 18.0. Erro semelhante ao que acontecia no Ubuntu 22.04 há meses atrás.
+
+Solução:
+
+sudo apt install build-essential
