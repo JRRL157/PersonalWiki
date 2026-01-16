@@ -1,0 +1,13 @@
+Issue: Out of "nowhere", my snap applications icons went missing
+
+What happened: I switched from bash to zsh
+
+Explanation: After switching to zsh, the snap app icons are not loaded properly.
+
+Solution:
+
+Create the file ~/.zprofile and add the following command inside of it:
+
+emulate sh -c 'source /etc/profile.d/apps-bin-path.sh'
+
+Then, logout or restart your machine.
