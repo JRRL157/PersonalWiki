@@ -1,0 +1,2 @@
+niosv-bsp -c -t=hal --sopcinfo=de10_lite.sopcinfo software/bsp/settings.bsp
+niosv-app -a=software/app -b=software/bsp -s=software/app/hello.c
