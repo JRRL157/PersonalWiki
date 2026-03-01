@@ -1,0 +1,7 @@
+To make it start with zshrc, make sure that these lines are commented:
+
+# autoload -Uz promptinit
+# promptinit
+# prompt adam1
+
+
