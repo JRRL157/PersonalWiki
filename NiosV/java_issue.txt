@@ -1,0 +1,1 @@
+ln -s /home/jrrl/altera_lite/25.1std/quartus/linux64 /home/jrrl/altera_lite/25.1std/linux64
