@@ -1,0 +1,18 @@
+# Criar diretório temporário
+mkdir -p ~/libpng12_temp && cd ~/libpng12_temp
+
+# Baixar o pacote .deb
+wget http://security.ubuntu.com/ubuntu/pool/main/libp/libpng/libpng12-0_1.2.54-1ubuntu1.1_amd64.deb
+
+# Descompactar o pacote
+ar x libpng12-0_1.2.54-1ubuntu1.1_amd64.deb
+tar -xf data.tar.xz
+
+# Copiar os arquivos da biblioteca para a pasta de 64-bits do Ubuntu 24.04
+sudo cp -d lib/x86_64-linux-gnu/libpng12.so.0* /usr/lib/x86_64-linux-gnu/
+
+# Atualizar o cache do linker dinâmico do Linux
+sudo ldconfig
+
+# Apagar a pasta temporária
+cd ~ && rm -rf ~/libpng12_temp
